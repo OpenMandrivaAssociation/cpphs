@@ -6,6 +6,7 @@ Group:          Development/Other
 License:        LGPL
 URL:            http://haskell.org/cpphs/
 Source0:        http://www.cs.york.ac.uk/fp/cpphs/%{name}-%{version}.tar.bz2
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  ghc
 
