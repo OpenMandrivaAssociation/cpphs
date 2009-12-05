@@ -1,6 +1,6 @@
 Name:           cpphs
 Version:        1.9
-Release:       	%mkrel 1
+Release:       	%mkrel 2
 Summary:        Liberalised re-implementation of cpp in Haskell
 Group:          Development/Other
 License:        LGPL
@@ -8,6 +8,7 @@ URL:            http://haskell.org/cpphs/
 Source0:        http://www.cs.york.ac.uk/fp/cpphs/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  ghc
+BuildRequires:	haskell-macros
 
 %description
 cpphs is a liberalised re-implementation of cpp in Haskell.
@@ -25,24 +26,30 @@ with Haskell, and written in Haskell to be distributed with compilers.
 %prep
 %setup -q
 
-
 %build
-ghc --make -o cpphs cpphs
+%_cabal_build
 
+%_cabal_genscripts
+
+%check
+%_cabal_check
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -D -m 755 cpphs $RPM_BUILD_ROOT%{_bindir}/cpphs
-install -D -m 644 docs/cpphs.1 $RPM_BUILD_ROOT%{_mandir}/man1/cpphs.1
+%_cabal_install
+
+rm -fr %{buildroot}/%_datadir/*/doc/
+
+%_cabal_rpm_gen_deps
+
+%_cabal_scriptlets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(-,root,root,-)
 %doc CHANGELOG LICENCE-LGPL README docs/design docs/index.html
 %{_bindir}/*
-%{_mandir}/man1/*
-
-
+%{_docdir}/%{name}-%{version}
+%{_libdir}/*
+%_cabal_rpm_files
