@@ -1,13 +1,12 @@
 Name:           cpphs
-Version:        1.5
-Release:       	%mkrel 4
+Version:        1.9
+Release:       	%mkrel 1
 Summary:        Liberalised re-implementation of cpp in Haskell
 Group:          Development/Other
 License:        LGPL
 URL:            http://haskell.org/cpphs/
-Source0:        http://www.cs.york.ac.uk/fp/cpphs/%{name}-%{version}.tar.bz2
+Source0:        http://www.cs.york.ac.uk/fp/cpphs/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-
 BuildRequires:  ghc
 
 %description
