@@ -1,6 +1,6 @@
 Name:           cpphs
 Version:        1.9
-Release:       	%mkrel 3
+Release:       	%mkrel 4
 Summary:        Liberalised re-implementation of cpp in Haskell
 Group:          Development/Other
 License:        LGPL
