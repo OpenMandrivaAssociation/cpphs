@@ -10,7 +10,7 @@ License:        LGPL
 URL:            http://hackage.haskell.org/package/%{module}
 Source0:        http://hackage.haskell.org/packages/archive/cpphs/1.16/%{name}-%{version}.tar.gz
 
-BuildRequires:  ghc, ghc-devel, haskell-macros, haddock
+BuildRequires:  ghc, ghc-devel, haskell-macros
 Requires:       ghc
 
 %description
