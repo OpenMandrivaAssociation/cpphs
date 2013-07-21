@@ -2,13 +2,13 @@
 #% define _cabal_setup Setup.lhs
 %define module cpphs
 Name:           %{module}
-Version:        1.14
+Version:        1.16
 Release:        1
 Summary:        A liberalised re-implementation of cpp, the C pre-processor
 Group:          Development/Other
 License:        LGPL
 URL:            http://hackage.haskell.org/package/%{module}
-Source0:        http://hackage.haskell.org/packages/archive/%{module}/%{version}/%{module}-%{version}.tar.gz
+Source0:        http://hackage.haskell.org/packages/archive/cpphs/1.16/%{name}-%{version}.tar.gz
 
 BuildRequires:  ghc, ghc-devel, haskell-macros, haddock
 Requires:       ghc
@@ -98,4 +98,5 @@ Import cpphs
 
 * Tue Aug 16 2005 Jens Petersen <petersen@haskell.org> - 0.9-1
 - initial build for Fedora Haskell
+
 
