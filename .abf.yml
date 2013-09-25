@@ -1,4 +1,5 @@
 removed_sources:
   cpphs-1.14.tar.gz: 83fb242f679a804154fb5d5b403c65d5b0b64607
-sources:
   cpphs-1.16.tar.gz: bb00fcb66e0a8c060cb213afc5676792e6f13560
+sources:
+  cpphs-1.17.1.tar.gz: 8af67725d30db6e6f1298a2eafc3e6563f41be48
