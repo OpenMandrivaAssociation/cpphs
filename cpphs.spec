@@ -7,7 +7,7 @@ Release:        1
 Summary:        A liberalised re-implementation of cpp, the C pre-processor
 Group:          Development/Other
 License:        LGPL
-URL:            http://hackage.haskell.org/package/%{module}
+URL:            https://hackage.haskell.org/package/%{module}
 Source0:        http://hackage.haskell.org/packages/archive/cpphs/1.17.1/%{name}-%{version}.tar.gz
 
 BuildRequires:  ghc, ghc-devel, haskell-macros, haddock
